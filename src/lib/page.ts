@@ -12,7 +12,7 @@ declare module "next-auth" {
       oid?: string;
       preferred_username?: string;
       // Add any other properties from the profile you need
-      [key: string]: any;
+      [key: string]: unknown;
     };
     user: {
       name?: string | null;
@@ -22,18 +22,18 @@ declare module "next-auth" {
   }
 }
 
-declare module "next-auth/jwt" {
-  interface JWT {
-    accessToken?: string;
-    idToken?: string;
-    profile?: {
-      oid?: string;
-      preferred_username?: string;
-      // Add any other properties from the profile you need
-      [key: string]: any;
-    };
-  }
-}
+// declare module "next-auth/jwt" {
+//   interface JWT {
+//     accessToken?: string;
+//     idToken?: string;
+//     profile?: {
+//       oid?: string;
+//       preferred_username?: string;
+//       // Add any other properties from the profile you need
+//       [key: string] : Record<string, unknown>;
+//     };
+//   }
+// }
 
 export const authOptions: NextAuthOptions = {
   providers: [
