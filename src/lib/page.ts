@@ -1,7 +1,6 @@
 // src/lib/auth.ts
 'use client';
 import type { NextAuthOptions } from "next-auth";
-import type { JWT } from "next-auth/jwt";
 import AzureADProvider from "next-auth/providers/azure-ad";
 
 // First, define the types for your custom session and JWT
