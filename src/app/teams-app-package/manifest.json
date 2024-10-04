@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.14",
+  "version": "1.0.0",
+  "id": "3b9b1f3a-f11f-4a52-bc9b-93f8a7201fbd", 
+  "packageName": "com.ndpc.teams-app",
+  "developer": {
+    "name": "Sudip Raj Adhikari",
+    "websiteUrl": "https://ndpc.com.np",
+    "privacyUrl": "https://ndpc.com.np/privacy-policy",
+    "termsOfUseUrl": "https://ndpc.com.np/terms-and-conditions"
+  },
+  "name": {
+    "short": "NDPC",
+    "full": "NDPC-Team"
+  },
+  "description": {
+    "short": "Leverage the internal operation using Information Technology",
+    "full": "Leverage the internal operation using Information Technology"
+  },
+  "icons": {
+    "outline": "image.png",
+    "color": "logo.png"
+  },
+  "accentColor": "#053058",
+  "staticTabs": [
+    {
+      "entityId": "ndpcTab",
+      "name": "NDPC Tab",
+      "contentUrl": "http://localhost:3000",
+      "websiteUrl": "http://localhost:3000",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers", "calendar"],
+  "validDomains": ["localhost"]
+}
