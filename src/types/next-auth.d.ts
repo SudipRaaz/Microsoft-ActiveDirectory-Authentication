@@ -1,3 +1,4 @@
+// @src/types/next-auth.d.ts
 import { DefaultSession } from "next-auth";
 
 declare module "next-auth" {
@@ -7,7 +8,7 @@ declare module "next-auth" {
     userProfile?: {
       oid?: string;
       preferred_username?: string;
-      [key: string]: any;
+      [key: string]: unknown;
     };
   }
 }
@@ -19,7 +20,7 @@ declare module "next-auth/jwt" {
     profile?: {
       oid?: string;
       preferred_username?: string;
-      [key: string]: any;
+      [key: string]: unknown;
     };
   }
 }

@@ -19,7 +19,7 @@ const handler = NextAuth({
       if (account && profile) {
         token.accessToken = account.access_token;
         token.idToken = account.id_token;
-        token.profile = profile;
+        token.profile = { ...profile };
       }
       return token;
     },
